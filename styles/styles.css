@@ -8,4 +8,14 @@ body {
     height: 100vh;
     margin: 0;
 }
+.welcome{
+    position: fixed;
+    top: 175px;
+}
+.login{
+border: 5px solid black;
+padding: 30px;
+margin: 10px;
+
+}
 
