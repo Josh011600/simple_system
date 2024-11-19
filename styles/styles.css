@@ -7,9 +7,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url('Downloads/34636662_10156626721928714_2223088386808217600_n.jpg');
 }
 .welcome{
-    position: fixed;
+    position: inherit;
     top: 175px;
 }
 .login{
