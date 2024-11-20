@@ -1,0 +1,30 @@
+
+User(table)
+
+id(int 5)
+username(var 23)
+password(var 23)
+email(var 23)
+phone(int 11)
+firstname(var 23)
+lastname(var 23)
+age(int 11)
+
+Admin(table)
+
+id(int 5)
+username(var 23)
+password(var 23)
+email(var 23)
+phone(int 11)
+firstName(var 23)
+lastName(var 23)
+age(int 11)
+
+notes:
+The isset() function checks whether a variable is set, 
+which means that it has to be declared and is not NULL
+
+
+continue 9:12 
+src: https://www.youtube.com/watch?v=JDn6OAMnJwQ

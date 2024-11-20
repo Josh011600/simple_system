@@ -1,0 +1,58 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+*
+{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.welcome{
+    position: inherit;
+    margin-bottom: 30px;
+}
+
+.login{
+    border-radius: 10px;
+    position: inherit;
+    padding: 30px;
+    background: #fff;
+    width: 50%;
+}
+
+input {
+    display: block;
+    border: 2px block #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+label
+{
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+}
+
+button
+{
+    position: inherit;
+    background: #555;
+    padding: 5px 25px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+button:hover{
+    opacity: 0.5;
+}
