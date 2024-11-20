@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1 class="welcome">GUARD TANGINAMO</h1><br>
+    <h1 class="welcome">login form</h1><br>
     <div class="login"> 
     <label for="username">username</label><br>
-    <input type="text" name="username" placeholder="username"required></input><br>
+    <input type="text" name="username" placeholder="username" required></input><br>
     <label for="password" >password</label><br>
     <input type="text"placeholder="password" required></input><br>
     <button>Login</button><br>
     <label for="signup">not registered yet?</label><br>
     <button><a href="Signup_page.php">signup</a></button>
 </div>
-<?php
-echo "Hello"; 
-?>
+
 </body>
 </html>
