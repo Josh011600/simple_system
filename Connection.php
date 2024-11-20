@@ -1,8 +1,9 @@
 <?php 
-/*
+
+
 $servername = "localhost"; 
-$username = "user"; 
-$password = "123456"; 
+$username = "root"; 
+$password = ""; 
 $dbName = "simple_system"; 
 
 // Creating connection 
@@ -20,5 +21,4 @@ echo "Connection established successfully...";
 
 // Close the connection 
 mysqli_close($conn); 
-*/
 ?>
