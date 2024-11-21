@@ -6,10 +6,16 @@
 	<title></title>
 	<style>
 	
-table
+table, th,td
 {
-	border-style: 10px solid #fff; 
-	border-width: 10px 5px;
+	border: solid;
+	border-collapse: collapse;
+	padding: 5px;
+	margin: 10px;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: inherit;
 }
 </style>
 </head>
@@ -24,22 +30,30 @@ if ($conn->connect_error) {
 }
 
 // Select query
-$sql = "SELECT id, username, email FROM admin";
+$sql = "SELECT * FROM admin";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
+if ($result->num_rows > 0) 
+{
     // Output data for each row
     while ($row = $result->fetch_assoc()) 
     {	
     	echo "<table class='tbl_admin'>";
-        echo "ID: " . $row["id"] . " - Name: " . $row["username"] . " - Email: " . $row["email"] . "<br>";
+        echo "<tr><th>ADMIN ID</th><th>NAME</th><th>EMAIL</th><th>PHONE</th></tr>";
+        echo "<tr><td><center>".$row["id"] . "</center></td><td>" . $row["username"] ."</td><td>". $row["email"] . "</td><td>" . $row["phone"] ."</td></tr>";
         echo "</table>";
     }
-} else {
+} 
+else 
+{
     echo "No results found.";
 }
 
 $conn->close();
+
+
+
+
 ?>
 </body>
 
