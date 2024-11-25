@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>Register page user</h1>
+    <form class="register" action="login.php" method="post">
+    <div>
+    <label>FIRSTNAME</label>
+    <input type="textbox" name="firstname" placeholder="Enter firstname"><br>
+    <label>LASTNAME</label>
+    <input type="textbox" name="firstname" placeholder="Enter lastname"><br>
+    <label>AGE</label>
+    <input type="textbox" name="firstname" placeholder="Enter Age"><br></div
+    </form>
+    <button type="submit">register</button>
 </body>
 </html>
