@@ -1,0 +1,10 @@
+control structure
+
+refactoring (add)
+
+phpdocumentor
+
+print vs echo
+
+google chat
+
