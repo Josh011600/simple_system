@@ -17,7 +17,7 @@ if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error()); 
 } 
 
-echo "Connection established successfully..."; 
+echo "<script>alert('Connected to database');</script>"; 
 
 // Close the connection 
 mysqli_close($conn); 

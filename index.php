@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN PAGE</title>
     <link rel="stylesheet" href="css/styles.css">
-    <?php 
-    include 'Connection.php';
-    echo "<br>";
-    ?>
+    
 </head>
 <body>
     
     <form class="login" action="Login.php" method="post"> 
+        <?php 
+    include 'Connection.php';
+    
+    ?>
     <h1 class="welcome">Login Form</h1><br>
     <label for="username">username</label><br>
     <!-- name=username is for login.php if(isset username etc.)-->
