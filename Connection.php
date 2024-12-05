@@ -1,24 +1,38 @@
-<?php 
+<?php
+require_once 'config.php';
+$query = 'SELECT * FROM user WHERE username = ?';
+$stmt = $conn->prepare($query);
 
+if (!$stmt) {
+    header('Location: index.php?error=Database error');
+    exit;
+}
 
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbName = "simple_system"; 
+// Bind the `username` parameter instead of `password`
+$stmt->bind_param("s", $username);
+$stmt->execute();
+$result = $stmt->get_result();
 
-// Creating connection 
-$conn = mysqli_connect($servername, 
-		$username, $password, $dbName); 
+// Check if user exists
+if ($result->num_rows == 0) {
+    header('Location: index.php?error=Account does not exist');
+    exit;
+}
 
-// Checking connection 
-if (!$conn) { 
+$user = $result->fetch_assoc();
 
-	// If connecting fails 
-	die("Connection failed: " . mysqli_connect_error()); 
-} 
+// Verify the password
+if (!password_verify($password, $user['password'])) {
+    header('Location: index.php?error=Incorrect password');
+    exit;
+}
 
-echo "<script>alert('Connected to database');</script>"; 
+// Successful login
+session_start();
+session_regenerate_id(true); // Prevent session fixation attacks
+$_SESSION['logged_in'] = true;
+$_SESSION['username'] = $user['username'];
 
-// Close the connection 
-mysqli_close($conn); 
+header('Location: dashboard.php');
+exit;
 ?>

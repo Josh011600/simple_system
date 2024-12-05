@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN PAGE</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Including database connection (optional if not needed here) -->
     
+    
+
 </head>
 <body>
-    
-    <form class="login" action="Login.php" method="post"> 
-        <?php 
-    include 'Connection.php';
-    
-    ?>
-    <h1 class="welcome">Login Form</h1><br>
-    <label for="username">username</label><br>
-    <!-- name=username is for login.php if(isset username etc.)-->
-    <input type="text" name="username" placeholder="username"required></input><br>
-    <label for="password" >password</label><br>
-     <!-- name=password is for login.php if(isset password etc.)-->
-    <input type="password " name="password" placeholder="password" required></input><br>
-    <button type="submit">Login</button><br>
-    <label for="signup">not registered yet?</label><br>
-    <button><a href="Signup_page.php">signup</a></button>
-</form>
+    <form class="login" action="connection2.php" method="post"> 
+    <div class="error-message">
+        <?php
+        if (isset($_GET['error'])) {
+            $err = htmlspecialchars($_GET['error']);
+            echo "<p style='color: red;'>$err</p>";
+        }
+        ?>
+    </div>
+        
+        <h1 class="welcome">Login Form</h1><br>
+        
+        <label for="username">Username</label><br>
+        <input type="text" name="username" id="username" placeholder="Enter your username"><br>
+        
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+        
+        <button type="submit">Login</button><br>
+        
+        <label for="signup">Not registered yet?</label><br>
+        <button type="button" onclick="window.location.href='Signup_page.php'">Signup</button>
+    </form>
 </body>
 </html>
-
