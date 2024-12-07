@@ -10,10 +10,7 @@
 <body>
     
     <form class="login" action="Login.php" method="post"> 
-        <?php 
-    include 'Connection.php';
-    
-    ?>
+        
     <h1 class="welcome">Login Form</h1><br>
     <label for="username">username</label><br>
     <!-- name=username is for login.php if(isset username etc.)-->
@@ -25,6 +22,10 @@
     <label for="signup">not registered yet?</label><br>
     <button><a href="Signup_page.php">signup</a></button>
 </form>
+<?php 
+    include 'Connection.php';
+    
+    ?>
 </body>
 </html>
 
