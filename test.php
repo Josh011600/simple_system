@@ -16,11 +16,15 @@
 </script>
 <?php
 
-$val1 = 1;
-print "Hello
-". $val1 ."<script>alert('Success!!');</script><marquee direction='right'>---></marquee direction='right'><br>
-<marquee direction='left'><--</marquee direction='left'><br>
-<marquee direction='right'>---></marquee direction='right'>
-1 aaa";
+include 'Car.php';
 
+
+
+$cs = array("Blue","Brown","Green");
+
+
+
+
+$instance = new Car();
+$instance->getColor($cs[1]);
 ?>
