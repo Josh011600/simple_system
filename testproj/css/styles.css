@@ -1,0 +1,8 @@
+* {
+	font-family: Tahoma, sans-serif;
+}
+button:hover
+{
+	opacity: 0.5;
+	background-color: black;
+}
