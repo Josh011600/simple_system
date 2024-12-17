@@ -8,8 +8,9 @@
     
 </head>
 <body>
-    
-    <form class="login" action="Login.php" method="post"> 
+<!--COMMENT -->
+<!--START HERE! -->
+    <form class="login" action="login.php" method="post"> 
         
     <h1 class="welcome">Login Form</h1><br>
     <label for="username">username</label><br>
@@ -20,11 +21,11 @@
     <input type="password " name="password" placeholder="password" required></input><br>
     <button type="submit">Login</button><br>
     <label for="signup">not registered yet?</label><br>
-    <button><a href="Signup_page.php">signup</a></button>
+    <button><a href="register.php">signup</a></button>
 </form>
+<!--COMMENT AFTER INDEX GOES TO LOGIN.PHP-->
 <?php 
     include 'Connection.php';
-    
     ?>
 </body>
 </html>

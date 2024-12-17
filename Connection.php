@@ -1,6 +1,4 @@
 <?php 
-
-
 $servername = "localhost"; 
 $username = "root"; 
 $password = ""; 
@@ -17,7 +15,7 @@ if (!$conn) {
 	include 'index.php';
 } 
 else{
-echo "<script>alert('Connected to database');</script>"; 
+echo "Connected!"; 
 	
 }
 // Close the connection 
