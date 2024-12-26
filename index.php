@@ -25,7 +25,7 @@
 </form>
 <!--COMMENT AFTER INDEX GOES TO LOGIN.PHP-->
 <?php 
-    include 'Connection.php';
+    include 'loginfunction/Connection.php';
     ?>
 </body>
 </html>
