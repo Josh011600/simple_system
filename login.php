@@ -12,7 +12,7 @@
                <input type = "submit" value = " Submit "/><br />
             </form>
         <div style = "font-size:11px; color:#cc0000; margin-top:10px">
-			<?php echo $error; ?>
+			<?php  ?>
 		</div>
 </body>
 </html>
@@ -46,7 +46,18 @@ if($count == 1) {
    $_SESSION['login_user'] = $myusername;
    header("location: welcome.php");
 } else {
-   $error = "Your Login Name or Password is invalid";
+   Try {
+      checkNum(2);
+  //If the exception is thrown, this text will not be shown
+  echo 'If you see this, the number is 1 or below';
+   }
+   catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+
 }
-}
+
+
+
+
+
 ?>

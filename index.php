@@ -20,12 +20,13 @@
     <input type="password " name="password" placeholder="password" required></input><br>
     <button type="submit">Login</button><br>
     <label for="signup">not registered yet?</label><br>
-    <button><a href="Signup_page.php">signup</a></button>
+    <button><a href="register.php">signup</a></button>
 </form>
+
+</body>
 <?php 
     include 'Connection.php';
     
     ?>
-</body>
 </html>
 
