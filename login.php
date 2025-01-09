@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,10 @@
 
 
 </script>
+=======
+>>>>>>> 30665c9c6039f39b9409c9bf56d751622e94e014
 <?php
+//Configuration for database. visit localhost/phpmyadmin
 include("config.php");
 session_start();
 	$error="";
@@ -44,8 +48,9 @@ if($count == 1) {
 
    // session_register("myusername");
    $_SESSION['login_user'] = $myusername;
-   header("location: welcome.php");
+   header("location: dashboard.php");
 } else {
+<<<<<<< HEAD
    Try {
       checkNum(2);
   //If the exception is thrown, this text will not be shown
@@ -54,6 +59,12 @@ if($count == 1) {
    catch(Exception $e) {
   echo 'Message: ' .$e->getMessage();
 
+=======
+   
+   header("location: index.php");
+   echo "<script>alert('Hello');</script>";
+}
+>>>>>>> 30665c9c6039f39b9409c9bf56d751622e94e014
 }
 
 

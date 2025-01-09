@@ -8,8 +8,9 @@
     
 </head>
 <body>
-    
-    <form class="login" action="Login.php" method="post"> 
+<!--COMMENT -->
+<!--START HERE! -->
+    <form class="login" action="login.php" method="post"> 
         
     <h1 class="welcome">Login Form</h1><br>
     <label for="username">username</label><br>
@@ -22,11 +23,14 @@
     <label for="signup">not registered yet?</label><br>
     <button><a href="register.php">signup</a></button>
 </form>
+<<<<<<< HEAD
 
 </body>
+=======
+<!--COMMENT AFTER INDEX GOES TO LOGIN.PHP-->
+>>>>>>> 30665c9c6039f39b9409c9bf56d751622e94e014
 <?php 
-    include 'Connection.php';
-    
+    include 'loginfunction/Connection.php';
     ?>
 </html>
 
