@@ -12,16 +12,16 @@
 <!--START HERE! -->
     <form class="login" action="login.php" method="post"> 
         
-    <h1 class="welcome">Login Form</h1><br>
-    <label for="username">username</label><br>
-    <!-- name=username is for login.php if(isset username etc.)-->
-    <input type="text" name="username" placeholder="username"required></input><br>
-    <label for="password" >password</label><br>
-     <!-- name=password is for login.php if(isset password etc.)-->
-    <input type="password " name="password" placeholder="password" required></input><br>
-    <button type="submit">Login</button><br>
-    <label for="signup">not registered yet?</label><br>
-    <button><a href="register.php">signup</a></button>
+    <div class="login-wrap">
+  <h2>Login</h2>
+  
+  <div class="form">
+    <input type="text" placeholder="Username" name="un" />
+    <input type="password" placeholder="Password" name="pw" />
+    <button> Sign in </button>
+    <a href="#"> <p> Don't have an account? Register </p></a>
+  </div>
+</div>
 </form>
 
 
