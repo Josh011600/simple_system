@@ -23,10 +23,11 @@
     <label for="signup">not registered yet?</label><br>
     <button><a href="register.php">signup</a></button>
 </form>
-<!--COMMENT AFTER INDEX GOES TO LOGIN.PHP-->
+
+
+</body>
 <?php 
     include 'loginfunction/Connection.php';
     ?>
-</body>
 </html>
 
