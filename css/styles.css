@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import "compass/css3";
 
 * { box-sizing: border-box; margin: 0; padding:0; }
@@ -107,4 +108,10 @@ html {
     
   }
   
+=======
+*
+{
+    text-align:center;
+    align:center
+>>>>>>> Stashed changes
 }
